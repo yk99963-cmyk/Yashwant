@@ -203,22 +203,19 @@
     <section id="skills" class="section">
         <h2 class="section-title">Skills</h2>
         <div class="skills-container">
-            <div class="skill-card"><img
-                    src="html_logo.png">
+            <div class="skill-card"><img src="html_logo.png">
                 <p>HTML</p>
             </div>
             <div class="skill-card"><img src="css_logo.svg">
                 <p>CSS</p>
             </div>
-            <div class="skill-card"><img
-                    src="js_logo.png">
+            <div class="skill-card"><img src="js_logo.png">
                 <p>JavaScript</p>
             </div>
             <!-- <div class="skill-card"><img src="https://www.sketchappsources.com/resources/source-image/python-logo.png">
                 <p>Python</p>
             </div> -->
-            <div class="skill-card"><img
-                    src="c_logo.png">
+            <div class="skill-card"><img src="c_logo.png">
                 <p>C</p>
             </div>
         </div>
@@ -244,14 +241,12 @@
 
         <div class="certificate-container">
             <div class="certificate-card" data-image="html_certificate.jpg">
-                <img src="html_logo.png"
-                    alt="HTML Certificate">
+                <img src="html_logo.png" alt="HTML Certificate">
                 <p>HTML Certificate</p>
             </div>
 
             <div class="certificate-card" data-image="c_certificate.jpg">
-                <img src="c_logo.png"
-                    alt="C Certificate">
+                <img src="c_logo.png" alt="C Certificate">
                 <p>C Certificate</p>
             </div>
         </div>
@@ -418,9 +413,24 @@
         /* ===== MOBILE MENU ===== */
         const menuToggle = document.querySelector(".menu-toggle");
         const navbar = document.querySelector(".navbar");
+        const navLinks = document.querySelectorAll(".navbar a");
+
         if (menuToggle) {
-            menuToggle.onclick = () => navbar.classList.toggle("active");
+            menuToggle.onclick = () => {
+                navbar.classList.toggle("active");
+            };
         }
+
+        /* Close menu when link is clicked */
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navbar.classList.remove("active");
+            });
+        });
+
+    window.addEventListener("scroll", () => {
+    navbar.classList.remove("active");
+});
 
         /* ===== SCROLL ANIMATION ===== */
         const observer = new IntersectionObserver(entries => {
