@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yashwant Kumar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home" class="intro-active">
+
+    <canvas id="particles"></canvas>
+
+
+    <!-- ===== PAGE INTRO ===== -->
+    <div id="intro">
+        <div class="intro-avatar">
+
+            <svg class="loader-ring" width="220" height="220">
+                <defs>
+                    <linearGradient id="gradient" x1="0" y1="0" x2="220" y2="0">
+                        <stop offset="0%" stop-color="#00ffd5" />
+                        <stop offset="100%" stop-color="#00b3ff" />
+                    </linearGradient>
+                </defs>
+                <circle class="ring-bg" cx="110" cy="110" r="100" />
+                <circle class="ring-progress" cx="110" cy="110" r="100" />
+            </svg>
+
+            <img src="yashwant.png" class="intro-image" alt="Yashwant Avatar">
+        </div>
+
+        <h1 class="intro-text" id="typingName"></h1>
+        <p class="intro-subtext">CSE Student</p>
+        <span id="loaderText">0%</span>
+
+        <!-- Floating particles -->
+        <div class="intro-particles"></div>
+    </div>
+
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <a href="#home" class="home-name">
+            <h1 class="profile-name">Yashwant Kumar</h1>
+        </a>
+
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#connect">Connect</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+        <div class="about-hello">
+            <h4 class="section-subtitle">Hello 👋 I'm</h4>
+        </div>
+        <h1 class="section-title">Yashwant Kumar</h1>
+
+        <div class="about-container">
+
+            <div class="about-image gradient-border">
+                <div class="photo-bg-animation"></div>
+                <div class="photo-particles"></div>
+                <span></span>
+                <img src="yashwant.png" alt="Yashwant Kumar">
+            </div>
+
+            <div class="about-content">
+                <h3> <span id="aboutTypingRole"></span></h3>
+
+                <p>
+                    Passionate about coding, web development, and problem-solving.
+                    I enjoy building responsive and interactive websites while
+                    continuously learning new technologies. My goal is to become
+                    a skilled software developer and create solutions that make
+                    a real impact.
+                </p>
+
+                <div class="about-cards">
+                    <div class="about-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Experience</h4>
+                        <p>Web Development</p>
+                        <p>Programming in C</p>
+                    </div>
+
+                    <div class="about-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Projects</h4>
+                        <p>2+ Completed</p>
+                    </div>
+
+                    <div class="about-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education</h4>
+                        <p>B.Tech CSE</p>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-wrapper">
+
+            <!-- Class 10 -->
+            <div class="edu-card">
+                <div class="edu-header">
+                    <div class="edu-title">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BTA8_zzFfvi_4evJJ9HTX3cZEjtJobp6Wg&s"
+                            alt="CBSE Logo">
+                        <div>
+                            <h3>Secondary Education (Class 10)</h3>
+                            <p>Central Board of Secondary Education</p>
+                        </div>
+                    </div>
+                    <span class="edu-badge">CBSE</span>
+                </div>
+
+                <div class="edu-location">📍 JNV Balesara Gopalganj, Bihar</div>
+
+                <p>
+                    Completed secondary education with strong academic performance
+                    and problem-solving skills.
+                </p>
+            </div>
+
+            <!-- Class 12 -->
+            <div class="edu-card">
+                <div class="edu-header">
+                    <div class="edu-title">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRahQLnOo_b6EH_OoBkvrwvRvuU9ow5_mtDew&s"
+                            alt="BSEB Logo">
+                        <div>
+                            <h3>Higher Secondary Education (Class 12)</h3>
+                            <p>Bihar School Examination Board</p>
+                        </div>
+                    </div>
+                    <span class="edu-badge">BSEB</span>
+                </div>
+
+                <div class="edu-location">
+                    📍 Higher Secondary School Khalgaon,Gopalganj
+                </div>
+
+                <p>
+                    Completed higher secondary education with specialization in
+                    Physics, Chemistry, and Mathematics.
+                </p>
+            </div>
+
+            <!-- B.Tech -->
+            <div class="edu-card">
+                <div class="edu-header">
+                    <div class="edu-title">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUu97xWfYiwu7f_1gITdcqI_zaD65v2nS_lA&s"
+                            alt="University Logo">
+                        <div>
+                            <h3>Bachelor of Technology (CSE)</h3>
+                            <p>Rungta International Skills University</p>
+                        </div>
+                    </div>
+                    <span class="edu-badge">RISU</span>
+                </div>
+
+                <div class="edu-location">📍 Rungta College Of Engineering & Technology, Kurud Rd, Kohka, Bhilai</div>
+
+                <p>
+                    Currently pursuing B.Tech in Computer Science & Engineering,
+                    focusing on Web Development and Programming.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card"><img
+                    src="html_logo.png">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card"><img src="css_logo.svg">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card"><img
+                    src="js_logo.png">
+                <p>JavaScript</p>
+            </div>
+            <!-- <div class="skill-card"><img src="https://www.sketchappsources.com/resources/source-image/python-logo.png">
+                <p>Python</p>
+            </div> -->
+            <div class="skill-card"><img
+                    src="c_logo.png">
+                <p>C</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal website built using HTML & CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Calculator App</h3>
+                <p>JavaScript-based calculator performing arithmetic operations.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ===== CERTIFICATE ===== -->
+    <section id="certificate" class="section">
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="certificate-container">
+            <div class="certificate-card" data-image="html_certificate.jpg">
+                <img src="html_logo.png"
+                    alt="HTML Certificate">
+                <p>HTML Certificate</p>
+            </div>
+
+            <div class="certificate-card" data-image="c_certificate.jpg">
+                <img src="c_logo.png"
+                    alt="C Certificate">
+                <p>C Certificate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATE MODAL ===== -->
+    <div class="certificate-modal" id="certificateModal">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" alt="Certificate Preview">
+    </div>
+
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+        <!-- <a href="mailto:yk99963@gmail.com" >
+            <div>
+                <span>Email: yk99963@gmail.com</span>
+                </div>
+            </a> -->
+        <h2 class="section-title">Contact</h2>
+        <a href="mailto:yk99963@gmail.com">
+            <div>
+                <p> Email ✉️ : yk99963@gmail.com </p>
+            </div>
+        </a>
+    </section>
+    <!-- ===== CONNECT WITH ME ===== -->
+    <section id="connect" class="section">
+        <h2 class="section-title">Connect With Me</h2>
+
+        <div class="connect-container">
+            <a href="https://www.linkedin.com/in/yashwant-kumar-a343b539a" target="_blank" class="connect-card">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="https://x.com/yashwant6203" target="_blank" class="connect-card">
+                <i class="fab fa-x-twitter"></i>
+                <span>Twitter</span>
+            </a>
+
+            <a href="https://www.instagram.com/yashwant1296" target="_blank" class="connect-card">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100027965630592" target="_blank" class="connect-card">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+
+            <a href="mailto:yk99963@gmail.com" class="connect-card">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </section>
+    <!-- ===== MESSAGE FORM SECTION ===== -->
+    <section id="message" class="section">
+        <h2>Send Me a Message</h2>
+
+        <form id="messageForm" class="message-form">
+            <div class="input-group">
+                <input type="text" name="name" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" required>
+                <label>Your Email</label>
+            </div>
+
+            <div class="input-group">
+                <textarea name="message" rows="5" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        /* ===== NAME TYPING INTRO ===== */
+        const nameText = "Yashwant Kumar";
+        const typingTarget = document.getElementById("typingName");
+        let charIndex = 0;
+
+        function typeName() {
+            if (typingTarget && charIndex < nameText.length) {
+                typingTarget.textContent += nameText.charAt(charIndex++);
+                setTimeout(typeName, 90);
+            }
+        }
+        typeName();
+
+        /* ===== INTRO LOADER ===== */
+        /* ===== INTRO LOADER WITH EASING + GLOW SYNC + BG FADE ===== */
+
+        let progress = 0;
+        const ring = document.querySelector(".ring-progress");
+        const text = document.getElementById("loaderText");
+        const intro = document.getElementById("intro");
+
+        const radius = 100;
+        const circumference = 2 * Math.PI * radius;
+        ring.style.strokeDasharray = circumference;
+        ring.style.strokeDashoffset = circumference;
+
+        let startTime = null;
+        const duration = 2200; // total loader time in ms
+
+        function easeOutCubic(t) {
+            return 1 - Math.pow(1 - t, 3);
+        }
+
+        function animateLoader(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const elapsed = timestamp - startTime;
+            const progressRatio = Math.min(elapsed / duration, 1);
+            const eased = easeOutCubic(progressRatio);
+
+            // Percentage
+            progress = Math.floor(eased * 100);
+            text.textContent = progress + "%";
+
+            // Ring progress
+            ring.style.strokeDashoffset = circumference - (eased * circumference);
+
+            // 🔥 Glow pulse synced with easing
+            const glowStrength = 8 + eased * 20;
+            ring.style.filter = `drop-shadow(0 0 ${glowStrength}px #00ffd5)`;
+
+            // ✨ Background subtle fade synced with loader
+            const bgOpacity = 0.05 + eased * 0.15;
+            intro.style.background = `radial-gradient(circle at center, rgba(0,255,213,${bgOpacity}), transparent 70%)`;
+
+            if (progressRatio < 1) {
+                requestAnimationFrame(animateLoader);
+            } else {
+                intro.classList.add("hide");
+                document.body.classList.remove("intro-active");
+            }
+        }
+
+        requestAnimationFrame(animateLoader);
+
+        /* ===== INTRO FLOATING PARTICLES GENERATOR ===== */
+        const introParticleBox = document.querySelector(".intro-particles");
+
+        if (introParticleBox) {
+            for (let i = 0; i < 25; i++) {
+                const p = document.createElement("span");
+                const size = Math.random() * 3 + 2;
+                p.style.width = size + "px";
+                p.style.height = size + "px";
+                p.style.left = Math.random() * 100 + "%";
+                p.style.animationDuration = (Math.random() * 6 + 4) + "s";
+                p.style.animationDelay = Math.random() * 5 + "s";
+                introParticleBox.appendChild(p);
+            }
+        }
+
+
+        /* ===== MOBILE MENU ===== */
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navbar = document.querySelector(".navbar");
+        if (menuToggle) {
+            menuToggle.onclick = () => navbar.classList.toggle("active");
+        }
+
+        /* ===== SCROLL ANIMATION ===== */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add("show");
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll(".section").forEach(sec => observer.observe(sec));
+
+        /* ===== ABOUT ROLE TYPING ===== */
+        const aboutRoles = [
+            { text: "CSE Student", color: "#4F46E5" },
+            { text: "Problem Solving", color: "#06B6D4" },
+            { text: "Web Developer", color: "#22C55E" },
+            { text: "Programmer", color: "#A855F7" }
+        ];
+
+
+
+
+        const aboutRoleElement = document.getElementById("aboutTypingRole");
+        let rIndex = 0, lIndex = 0, deleting = false;
+
+        function typeAboutRole() {
+            if (!aboutRoleElement) return;
+            const role = aboutRoles[rIndex];
+            aboutRoleElement.style.color = role.color;
+
+            if (!deleting) {
+                aboutRoleElement.textContent = role.text.substring(0, ++lIndex);
+                if (lIndex === role.text.length) {
+                    deleting = true;
+                    setTimeout(typeAboutRole, 1200);
+                    return;
+                }
+            } else {
+                aboutRoleElement.textContent = role.text.substring(0, --lIndex);
+                if (lIndex === 0) {
+                    deleting = false;
+                    rIndex = (rIndex + 1) % aboutRoles.length;
+                }
+            }
+            setTimeout(typeAboutRole, deleting ? 50 : 100);
+        }
+        typeAboutRole();
+
+        /* ===== FULL PAGE PARTICLE BACKGROUND ===== */
+        const canvas = document.getElementById("particles");
+        if (canvas) {
+            const ctx = canvas.getContext("2d");
+            let particles = [];
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resizeCanvas();
+
+            function initParticles() {
+                particles = [];
+                for (let i = 0; i < 90; i++) {
+                    particles.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        r: Math.random() * 2 + 1,
+                        dx: (Math.random() - 0.5) * 0.4,
+                        dy: (Math.random() - 0.5) * 0.4
+                    });
+                }
+            }
+            initParticles();
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#00ffd5";
+
+                particles.forEach(p => {
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fill();
+                    p.x += p.dx;
+                    p.y += p.dy;
+
+                    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+                    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+                });
+                requestAnimationFrame(animateParticles);
+            }
+            animateParticles();
+
+            window.addEventListener("resize", () => {
+                resizeCanvas();
+                initParticles();
+            });
+        }
+
+        /* ===== CERTIFICATE MODAL ===== */
+        const modal = document.getElementById("certificateModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.querySelector(".close-modal");
+
+        if (modal && modalImg && closeBtn) {
+            document.querySelectorAll(".certificate-card").forEach(card => {
+                card.addEventListener("click", () => {
+                    modalImg.src = card.dataset.image;
+                    modal.classList.add("active");
+                });
+            });
+
+            closeBtn.onclick = () => modal.classList.remove("active");
+            modal.onclick = e => {
+                if (e.target === modal) modal.classList.remove("active");
+            };
+        }
+    </script>
+
+    <!-- ===== EMAILJS SDK ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        /* ===== EMAILJS INIT ===== */
+        (function () {
+            emailjs.init("2Oe8H43wp2SzB8V_p");
+        })();
+
+        /* ===== MESSAGE FORM ===== */
+        const form = document.getElementById("messageForm");
+        if (form) {
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                emailjs.sendForm(
+                    "service_dep84nh",
+                    "template_1zs7qsm",
+                    this
+                ).then(() => {
+                    alert("Message sent successfully!");
+                    this.reset();
+                }, (error) => {
+                    alert("Failed to send message!");
+                    console.log(error);
+                });
+            });
+        }
+
+        /* ===== FOOTER YEAR ===== */
+        const yearEl = document.getElementById("year");
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    </script>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <p>Thanks for visiting my portfolio ✨</p>
+            <p class="footer-copy">
+                © <span id="year"></span> 2026 | Made by ❤️ Yashwant Kumar
+            </p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
